@@ -11,6 +11,7 @@ and course assignments.
 
 | # | Lesson | Knowledge source |
 |---|--------|------------------|
+| 03 | End-to-End Process for Designing AI Products | [lessons/03-end-to-end-process](lessons/03-end-to-end-process/README.md) |
 | 04 | Running a Workshop | [lessons/04-running-a-workshop](lessons/04-running-a-workshop/README.md) |
 
 ## Assignments
