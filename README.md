@@ -12,6 +12,7 @@ and course assignments.
 | # | Lesson | Knowledge source |
 |---|--------|------------------|
 | 01 | AI as a Tool for Innovation & Empowering Human-Centred Design | [lessons/01-ai-and-human-centred-design](lessons/01-ai-and-human-centred-design/README.md) |
+| 02 | AI Fundamentals: Understanding Machine Learning & Principles | [lessons/02-ai-fundamentals](lessons/02-ai-fundamentals/README.md) |
 | 03 | End-to-End Process for Designing AI Products | [lessons/03-end-to-end-process](lessons/03-end-to-end-process/README.md) |
 | 04 | Running a Workshop | [lessons/04-running-a-workshop](lessons/04-running-a-workshop/README.md) |
 
