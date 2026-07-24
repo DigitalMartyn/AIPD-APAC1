@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="theme-color" content="#0a0a0a" />
+<title>Rail Park</title>
+<style>
+  :root {
+    --ink: #000000;
+    --paper: #ffffff;
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    overscroll-behavior: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
+  }
+
+  /* The sign */
+  .sign {
+    position: relative;
+    width: min(92vw, 420px);
+    aspect-ratio: 3 / 4.35;
+    background: var(--ink);
+    border-radius: 28px;
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+    padding: 7% 8% 6%;
+    overflow: hidden;
+  }
+
+  /* Logo: drink roundel */
+  .logo {
+    justify-self: center;
+    margin-top: 4%;
+    width: 30%;
+    aspect-ratio: 1;
+  }
+
+  .heading {
+    text-align: center;
+    margin-top: 6%;
+  }
+  .heading .title {
+    font-size: clamp(26px, 10vw, 46px);
+    line-height: 0.98;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+
+  /* Arrow — this is what rotates to point north */
+  .arrow-wrap {
+    align-self: center;
+    justify-self: center;
+    width: 46%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow {
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.12s linear;
+    will-change: transform;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.25));
+  }
+
+  /* Waypoints row */
+  .waypoints {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3%;
+    margin-top: 5%;
+    padding-top: 5%;
+    border-top: 2px solid rgba(255,255,255,0.25);
+  }
+  .wp {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+  }
+  .wp svg {
+    width: 34%;
+    max-width: 34px;
+    aspect-ratio: 1;
+  }
+  .wp .lbl {
+    font-size: clamp(9px, 3vw, 12px);
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  .footer .walk {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer .walk-icon {
+    width: clamp(22px, 7vw, 30px);
+    height: auto;
+  }
+  .footer .hours {
+    line-height: 1.15;
+  }
+  .footer .hours .label {
+    font-size: clamp(8px, 2.6vw, 11px);
+    opacity: 0.9;
+  }
+  .footer .hours .time {
+    font-size: clamp(15px, 5vw, 20px);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  /* Status / permission overlay */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10,10,10,0.82);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+    gap: 18px;
+    transition: opacity 0.3s ease;
+  }
+  .overlay.hidden { opacity: 0; pointer-events: none; }
+  .overlay h2 { margin: 0; font-size: clamp(18px, 6vw, 24px); }
+  .overlay p { margin: 0; font-size: clamp(13px, 4vw, 15px); opacity: 0.85; line-height: 1.5; max-width: 30ch; }
+  .btn {
+    appearance: none;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .btn:active { transform: scale(0.97); }
+
+  /* Live heading readout under the sign */
+  .readout {
+    position: fixed;
+    left: 0; right: 0;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #7a7a7a;
+    font-variant-numeric: tabular-nums;
+  }
+  .readout .warn { color: #f59e0b; }
+</style>
+</head>
+<body>
+  <main class="sign" role="img" aria-label="Welcome to the Rail Park">
+    <!-- Logo: drink roundel -->
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#fff" stroke-width="4"/>
+      <!-- cocktail glass bowl -->
+      <polygon points="28,34 72,34 50,58" fill="#fff"/>
+      <!-- stem + base -->
+      <g stroke="#fff" stroke-width="5" stroke-linecap="round">
+        <line x1="50" y1="58" x2="50" y2="78"/>
+        <line x1="37" y1="78" x2="63" y2="78"/>
+      </g>
+      <!-- garnish pick + olive -->
+      <line x1="52" y1="36" x2="66" y2="22" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="67" cy="21" r="5" fill="#fff"/>
+    </svg>
+
+    <!-- Heading -->
+    <div class="heading">
+      <h1 class="title">Emirates Lounge</h1>
+    </div>
+
+    <!-- Compass arrow -->
+    <div class="arrow-wrap">
+      <svg class="arrow" id="arrow" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 6 L78 52 L58 52 L58 92 L42 92 L42 52 L22 52 Z" fill="#fff"/>
+      </svg>
+    </div>
+
+    <!-- Waypoints: directional route instructions -->
+    <div class="waypoints">
+      <div class="wp">
+        <svg viewBox="0 0 100 100" style="transform:rotate(-90deg)" aria-hidden="true"><path d="M50 12 L74 46 L58 46 L58 88 L42 88 L42 46 L26 46 Z" fill="#fff"/></svg>
+        <span class="lbl">Zara</span>
+      </div>
+      <div class="wp">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 12 L74 46 L58 46 L58 88 L42 88 L42 46 L26 46 Z" fill="#fff"/></svg>
+        <span class="lbl">Passport Control</span>
+      </div>
+      <div class="wp">
+        <svg viewBox="0 0 100 100" style="transform:rotate(45deg)" aria-hidden="true"><path d="M50 12 L74 46 L58 46 L58 88 L42 88 L42 46 L26 46 Z" fill="#fff"/></svg>
+        <span class="lbl">Travelator</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="walk">
+        <svg class="walk-icon" viewBox="0 0 24 24" aria-hidden="true" fill="#fff">
+          <circle cx="13" cy="4" r="2"/>
+          <path d="M12.5 7.5c-.9 0-1.6.5-2 1.3L8.6 13l-2.4 1.2.7 1.4 2.9-1.4.8-1.6.9 4.1-2.6 4.3 1.4.8 3-4.9-.7-3.4 1.9 1.7v4.2h1.6v-5l-1.9-2 .6-3.2c1 1.2 2.5 2 4.2 2v-1.7c-1.4 0-2.6-.7-3.3-1.8l-.8-1.3c-.4-.6-1-1-1.8-1z"/>
+        </svg>
+        <div class="hours">
+          <div class="label">Walking distance</div>
+          <div class="time">4 mins</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Permission overlay -->
+    <div class="overlay" id="overlay">
+      <h2>Point me north</h2>
+      <p>This uses your phone&rsquo;s compass to keep the arrow aimed at true north. Tap to enable, then hold your phone flat.</p>
+      <button class="btn" id="enableBtn">Enable Compass</button>
+    </div>
+  </main>
+
+  <div class="readout" id="readout">Compass not started</div>
+
+<script>
+(function () {
+  var arrow = document.getElementById('arrow');
+  var overlay = document.getElementById('overlay');
+  var enableBtn = document.getElementById('enableBtn');
+  var readout = document.getElementById('readout');
+
+  // Smoothing so the arrow doesn't jitter with noisy sensor data.
+  var currentRotation = 0;   // the value currently applied to the DOM (continuous, unwrapped)
+  var targetHeading = 0;     // latest compass heading (0-360)
+  var haveReading = false;
+
+  // Convert compass heading -> arrow rotation.
+  // The compass heading is the direction the TOP of the phone points, clockwise from north.
+  // To keep the arrow visually pointing at north, we counter-rotate by -heading.
+  function headingToRotation(heading) {
+    return -heading;
+  }
+
+  // Unwrap so we always take the shortest rotational path (avoids 359->0 spin).
+  function shortestDelta(from, to) {
+    var d = (to - from) % 360;
+    if (d > 180) d -= 360;
+    if (d < -180) d += 360;
+    return d;
+  }
+
+  function animate() {
+    if (haveReading) {
+      var target = headingToRotation(targetHeading);
+      var delta = shortestDelta(currentRotation, target);
+      // Ease toward target
+      currentRotation += delta * 0.18;
+      arrow.style.transform = 'rotate(' + currentRotation.toFixed(2) + 'deg)';
+    }
+    requestAnimationFrame(animate);
+  }
+  requestAnimationFrame(animate);
+
+  function compassNameFromHeading(h) {
+    var dirs = ['N','NE','E','SE','S','SW','W','NW'];
+    return dirs[Math.round(h / 45) % 8];
+  }
+
+  function onOrientation(e) {
+    var heading = null;
+
+    // iOS Safari provides an absolute compass heading directly.
+    if (typeof e.webkitCompassHeading === 'number' && !isNaN(e.webkitCompassHeading)) {
+      heading = e.webkitCompassHeading;
+    } else if (e.absolute === true && typeof e.alpha === 'number') {
+      // Standard API: alpha is degrees counter-clockwise from north, so heading = 360 - alpha.
+      heading = (360 - e.alpha) % 360;
+    }
+
+    if (heading === null || isNaN(heading)) {
+      readout.innerHTML = '<span class="warn">No compass data on this device/browser</span>';
+      return;
+    }
+
+    targetHeading = heading;
+    haveReading = true;
+    readout.textContent = 'Heading ' + Math.round(heading) + '° ' + compassNameFromHeading(heading) +
+      '  •  arrow points to true north';
+  }
+
+  function startListening() {
+    // Prefer the absolute orientation event when available.
+    if ('ondeviceorientationabsolute' in window) {
+      window.addEventListener('deviceorientationabsolute', onOrientation, true);
+    }
+    window.addEventListener('deviceorientation', onOrientation, true);
+    overlay.classList.add('hidden');
+    readout.textContent = 'Starting compass…';
+  }
+
+  function enable() {
+    // iOS 13+ requires an explicit permission request from a user gesture.
+    var DOE = window.DeviceOrientationEvent;
+    if (DOE && typeof DOE.requestPermission === 'function') {
+      DOE.requestPermission()
+        .then(function (state) {
+          if (state === 'granted') {
+            startListening();
+          } else {
+            readout.innerHTML = '<span class="warn">Compass permission denied</span>';
+          }
+        })
+        .catch(function () {
+          readout.innerHTML = '<span class="warn">Compass needs HTTPS &amp; permission</span>';
+        });
+    } else {
+      // Non-iOS: just start.
+      startListening();
+    }
+  }
+
+  enableBtn.addEventListener('click', enable);
+
+  // If sensors are available without permission (some Android), we still wait for a tap
+  // so the arrow starts deliberately and the overlay explains what's happening.
+})();
+</script>
+</body>
+</html>
