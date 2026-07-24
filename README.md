@@ -22,6 +22,7 @@ and course assignments.
 | # | Assignment | Knowledge source |
 |---|------------|------------------|
 | 01 | Define & Frame Your Capstone Concept | [assignments/01-define-frame-capstone](assignments/01-define-frame-capstone/README.md) |
+| 02 | Prototype & Test Your Concept | [assignments/02-prototype-test-concept](assignments/02-prototype-test-concept/README.md) |
 
 ## Structure
 
