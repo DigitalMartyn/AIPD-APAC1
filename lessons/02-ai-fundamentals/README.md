@@ -6,10 +6,6 @@
 > each one changes how you design.*
 > **Source board:** [ELVTR AIPD1 — 02 AI Fundamentals (FigJam)](https://www.figma.com/board/iw7qf7LzT0SrfQHxVPIMQf/ELVTR-AIPD1---02-AI-Fundamentals--Understanding-Machine-Learning-and-Principles)
 
-This knowledge source captures the deck's concept, diagram, and example cards, organized under the
-deck's three sections. A recurring lens on every concept card is **"why it matters for
-designers."**
-
 > **Scope note:** the source deck also contains ~27 narrative "Slide" frames within these three
 > sections whose text lives in Figma components not exposed by the board API. This document
 > captures the fully-readable concept/diagram/example cards plus the section structure; the

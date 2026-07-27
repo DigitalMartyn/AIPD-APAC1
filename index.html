@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BYTE QUEST</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+  }
+  #screen {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 640px;
+    height: 576px;
+    background: #9bbc0f;
+    border: 16px solid #2b2b2b;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body>
+<canvas id="screen" width="160" height="144"></canvas>
+<script>
+var canvas = document.getElementById('screen');
+var ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = false;
+
+// Game Boy DMG palette
+var C_DARKEST = '#0f380f';
+var C_DARK    = '#306230';
+var C_LIGHT   = '#8bac0f';
+var C_LIGHTEST = '#9bbc0f';
+
+var TILE = 8;
+
+// Level grid, 20 wide x 18 tall. 1 = solid, 0 = empty, 2 = coin.
+// Note the open right edge so the hero can walk off and fall forever.
+var level = [
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0],
+  [0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0],
+  [2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0],
+  [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0],
+  [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+];
+
+// Hero
+var hero = {
+  x: 24,
+  y: 80,
+  w: 6,
+  h: 8,
+  vx: 0,
+  vy: 0,
+  onGround: false
+};
+
+var score = 0;
+
+var keys = {};
+window.addEventListener('keydown', function(e){
+  keys[e.key] = true;
+  if (e.key === ' ' || e.key === 'ArrowUp' || e.key === 'ArrowDown') e.preventDefault();
+});
+window.addEventListener('keyup', function(e){ keys[e.key] = false; });
+
+function tileAt(px, py) {
+  var col = Math.floor(px / TILE);
+  var row = Math.floor(py / TILE);
+  if (row < 0 || row >= level.length || col < 0 || col >= level[0].length) {
+    return 0;
+  }
+  return level[row][col];
+}
+
+function solidAt(px, py) {
+  return tileAt(px, py) === 1;
+}
+
+var startX = hero.x;
+var startY = hero.y;
+
+function respawn() {
+  hero.x = startX;
+  hero.y = startY;
+  hero.vx = 0;
+  hero.vy = 0;
+  hero.onGround = false;
+}
+
+function update() {
+  // horizontal movement
+  if (keys['ArrowLeft']) hero.vx = -1.2;
+  else if (keys['ArrowRight']) hero.vx = 1.2;
+  else hero.vx = 0;
+
+  // jump
+  if ((keys[' '] || keys['ArrowUp']) && hero.onGround) {
+    hero.vy = -4.2;
+    hero.onGround = false;
+  }
+
+  // gravity, added per frame, no delta time
+  hero.vy += 0.3;
+  if (hero.vy > 6) hero.vy = 6;
+
+  // apply horizontal
+  hero.x += hero.vx;
+
+  // apply vertical
+  hero.y += hero.vy;
+
+  // check the tile just under the hero's feet
+  hero.onGround = false;
+  if (solidAt(hero.x + hero.w/2, hero.y + hero.h)) {
+    // snap to top of that tile and stop falling
+    var row = Math.floor((hero.y + hero.h) / TILE);
+    hero.y = row * TILE - hero.h;
+    hero.vy = 0;
+    hero.onGround = true;
+  }
+
+  // bump head on ceiling
+  if (hero.vy < 0 && solidAt(hero.x + hero.w/2, hero.y)) {
+    hero.vy = 0;
+  }
+
+  // coin pickup, now bounds-safe via tileAt
+  var cc = Math.floor((hero.x + hero.w/2) / TILE);
+  var cr = Math.floor((hero.y + hero.h/2) / TILE);
+  if (tileAt(hero.x + hero.w/2, hero.y + hero.h/2) === 2) {
+    level[cr][cc] = 0;
+    score += 1;
+  }
+
+  // fell off the bottom of the world, respawn instead of crashing
+  if (hero.y > 144) {
+    respawn();
+  }
+}
+
+function drawTile(col, row, val) {
+  var x = col * TILE;
+  var y = row * TILE;
+  if (val === 1) {
+    // brick block
+    ctx.fillStyle = C_DARK;
+    ctx.fillRect(x, y, TILE, TILE);
+    ctx.fillStyle = C_DARKEST;
+    ctx.fillRect(x, y, TILE, 1);
+    ctx.fillRect(x, y + 4, TILE, 1);
+    ctx.fillRect(x + 3, y, 1, 4);
+    ctx.fillRect(x + 6, y + 4, 1, 4);
+  } else if (val === 2) {
+    // coin
+    ctx.fillStyle = C_DARKEST;
+    ctx.fillRect(x + 2, y + 1, 4, 6);
+    ctx.fillStyle = C_LIGHTEST;
+    ctx.fillRect(x + 3, y + 2, 2, 4);
+  }
+}
+
+function drawHero() {
+  var x = Math.floor(hero.x);
+  var y = Math.floor(hero.y);
+  // body
+  ctx.fillStyle = C_DARKEST;
+  ctx.fillRect(x, y, hero.w, hero.h);
+  // face highlight
+  ctx.fillStyle = C_LIGHTEST;
+  ctx.fillRect(x + 1, y + 1, 4, 2);
+  // eyes
+  ctx.fillStyle = C_DARKEST;
+  ctx.fillRect(x + 1, y + 2, 1, 1);
+  ctx.fillRect(x + 4, y + 2, 1, 1);
+  // little feet
+  ctx.fillStyle = C_DARK;
+  ctx.fillRect(x, y + hero.h - 1, 2, 1);
+  ctx.fillRect(x + 4, y + hero.h - 1, 2, 1);
+}
+
+function drawText(str, x, y, color) {
+  // tiny 3x5 blocky pixel font
+  var font = {
+    'A':['111','101','111','101','101'],
+    'B':['110','101','110','101','110'],
+    'C':['111','100','100','100','111'],
+    'D':['110','101','101','101','110'],
+    'E':['111','100','110','100','111'],
+    'Q':['111','101','101','111','011'],
+    'S':['111','100','111','001','111'],
+    'T':['111','010','010','010','010'],
+    'U':['101','101','101','101','111'],
+    'Y':['101','101','010','010','010'],
+    'B ':['110','101','110','101','110'],
+    ' ':['000','000','000','000','000'],
+    '0':['111','101','101','101','111'],
+    '1':['010','110','010','010','111'],
+    '2':['111','001','111','100','111'],
+    '3':['111','001','111','001','111'],
+    '4':['101','101','111','001','001'],
+    '5':['111','100','111','001','111'],
+    '6':['111','100','111','101','111'],
+    '7':['111','001','001','001','001'],
+    '8':['111','101','111','101','111'],
+    '9':['111','101','111','001','111']
+  };
+  ctx.fillStyle = color;
+  var cx = x;
+  for (var i = 0; i < str.length; i++) {
+    var g = font[str[i]];
+    if (g) {
+      for (var r = 0; r < 5; r++) {
+        for (var c = 0; c < 3; c++) {
+          if (g[r][c] === '1') ctx.fillRect(cx + c, y + r, 1, 1);
+        }
+      }
+    }
+    cx += 4;
+  }
+}
+
+function draw() {
+  // background
+  ctx.fillStyle = C_LIGHTEST;
+  ctx.fillRect(0, 0, 160, 144);
+
+  // tiles
+  for (var r = 0; r < level.length; r++) {
+    for (var c = 0; c < level[r].length; c++) {
+      if (level[r][c] !== 0) drawTile(c, r, level[r][c]);
+    }
+  }
+
+  drawHero();
+
+  // title bar
+  drawText('BYTE QUEST', 4, 3, C_DARKEST);
+  // score top-right
+  drawText('' + score, 148, 3, C_DARKEST);
+}
+
+function loop() {
+  update();
+  draw();
+  requestAnimationFrame(loop);
+}
+
+loop();
+</script>
+</body>
+</html>

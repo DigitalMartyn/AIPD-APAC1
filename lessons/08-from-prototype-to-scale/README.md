@@ -7,12 +7,6 @@
 > scale — Prototype → Production → Scale.*
 > **Source deck:** [ELVTR AIPD1 — 08 From Prototype to Scale (Figma)](https://www.figma.com/design/7e4neraAaNJrg4BrfPHOv2/ELVTR-AIPD1---08-From-Prototype-to-Scale?node-id=177-187)
 
-This knowledge source captures the finished deck (the file's **TO DESIGN** section). The lesson is
-the bridge where your tested concept becomes something you can actually ship and scale. It looks at
-scale from three angles — how **big products** scale, how **start-ups** scale, and how to
-**productionise** your own prototype with an AI workflow — and sets the new bar for designers who
-ship.
-
 ## Where you start
 
 **You're not starting from zero.** By now you've done the hard part:

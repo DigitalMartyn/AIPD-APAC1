@@ -5,11 +5,6 @@
 > **Theme:** *How to run a workshop — creating clarity, alignment, and momentum in the room.*
 > **Source deck:** [ELVTR AIPD1 — 04 Running a Workshop (Figma)](https://www.figma.com/design/TI1hG9gayW3bSB7qwPNgqt/ELVTR-AIPD1---04-Running-a-Workshop)
 
-This knowledge source captures the teaching content of the lesson: the stance a facilitator
-takes, the five-move mindset, the exercises, worked examples from real workshops, and the
-supporting appendices. Where the deck shows a verbatim facilitator script ("Say this"), those
-phrases are quoted; some scripts are abbreviated where the source truncates them.
-
 ---
 
 ## 1. The stance

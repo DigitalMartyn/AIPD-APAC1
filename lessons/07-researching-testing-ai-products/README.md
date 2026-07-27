@@ -6,10 +6,6 @@
 > Observe → Test → Iterate.*
 > **Source deck:** [ELVTR AIPD1 — 07 Researching & Testing AI Products (Figma)](https://www.figma.com/design/cLUAEY4oqmXvnJbJdEu9oV/ELVTR-AIPD1---07-Researching---Testing-AI-Products)
 
-This knowledge source captures the finished deck (the file's **TO DESIGN** section). The lesson
-argues that testing AI products is fundamentally different from traditional UX testing, and gives
-methods for studying **behaviour, failure, and mental models** rather than opinions.
-
 ## The shift
 
 **AI is probabilistic, not deterministic.** Most UX testing assumes the system behaves the same

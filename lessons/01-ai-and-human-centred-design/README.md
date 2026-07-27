@@ -5,10 +5,6 @@
 > **Theme:** *AI collapses the build loop — design becomes judgment.*
 > **Source board:** [ELVTR AIPD1 — 01 AI as a Tool for Innovation and Empowering Human-Centred Design (FigJam)](https://www.figma.com/board/yejw5MnVCCD87cr7Z774j6/ELVTR-AIPD1---01-AI-as-a-Tool-for-Innovation-and-Empowering-Human-Centred-Design)
 
-This knowledge source captures the presentation deck contained in the board's **TO DESIGN** frame.
-The lesson argues that AI changes *what design is*: execution gets cheap, judgment gets valuable,
-and the designer's job becomes deciding what deserves to exist.
-
 ## Contents — three shifts
 
 1. **From maker to curator** — design moves from execution to judgment.

@@ -6,10 +6,6 @@
 > grounded in two real case studies.*
 > **Source board:** [ELVTR 03 · End-to-End Process for Designing AI Products (FigJam)](https://www.figma.com/board/qUe7gjHa3InrBp735gh5o8/ELVTR-03-%C2%B7-End-to-End-Process-for-Designing-AI-Products)
 
-This knowledge source captures the lesson's two models for building AI products, a side-by-side
-comparison, and two worked case studies (Spotify Wrapped Archive 2025 and Adobe Express AI
-Assistant).
-
 ## Agenda
 
 1. Two ways to build AI products.
