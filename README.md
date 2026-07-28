@@ -15,6 +15,7 @@ and course assignments.
 | 02 | AI Fundamentals: Understanding Machine Learning & Principles | [lessons/02-ai-fundamentals](lessons/02-ai-fundamentals/README.md) |
 | 03 | End-to-End Process for Designing AI Products | [lessons/03-end-to-end-process](lessons/03-end-to-end-process/README.md) |
 | 04 | Running a Workshop | [lessons/04-running-a-workshop](lessons/04-running-a-workshop/README.md) |
+| 05 | Rapid Prototyping | [lessons/05-rapid-prototyping](lessons/05-rapid-prototyping/README.md) |
 | 07 | Researching & Testing AI Products | [lessons/07-researching-testing-ai-products](lessons/07-researching-testing-ai-products/README.md) |
 | 08 | From Prototype to Scale | [lessons/08-from-prototype-to-scale](lessons/08-from-prototype-to-scale/README.md) |
 
