@@ -1,4 +1,9 @@
-# AIPD-APAC1
+---
+title: AIPD-APAC1
+description: Knowledge base for the ELVTR AI Product Development APAC cohort 1
+ms.date: 2026-07-29
+ms.topic: overview
+---
 
 Knowledge base for the **ELVTR — AI Product Development (AIPD)** course, APAC cohort 1.
 
@@ -18,11 +23,13 @@ and course assignments.
 | 05 | Rapid Prototyping | [lessons/05-rapid-prototyping](lessons/05-rapid-prototyping/README.md) |
 | 07 | Researching & Testing AI Products | [lessons/07-researching-testing-ai-products](lessons/07-researching-testing-ai-products/README.md) |
 | 08 | From Prototype to Scale | [lessons/08-from-prototype-to-scale](lessons/08-from-prototype-to-scale/README.md) |
+| 09 | User Interface Design in the Age of AI | [lessons/09-designing-ai-ui-experiences](lessons/09-designing-ai-ui-experiences/README.md) |
 
 ## Assignments
 
 | # | Assignment | Knowledge source |
 |---|------------|------------------|
+| 00 | Overall AI Product Design Capstone Brief | [assignments/00-overall-capstone-brief](assignments/00-overall-capstone-brief/README.md) |
 | 01 | Define & Frame Your Capstone Concept | [assignments/01-define-frame-capstone](assignments/01-define-frame-capstone/README.md) |
 | 02 | Prototype & Test Your Concept | [assignments/02-prototype-test-concept](assignments/02-prototype-test-concept/README.md) |
 
