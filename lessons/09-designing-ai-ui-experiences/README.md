@@ -17,7 +17,6 @@ keywords:
 > **Course:** ELVTR AI Product Design (AIPD1), APAC cohort
 > **Lesson:** 09, User Interface Design in the Age of AI
 > **Instructor:** Martyn Gooding
-> **Source deck:** [ELVTR AIPD1: 09 Designing AI UI Experiences](https://www.figma.com/design/xjEitGbwo3zSveBEBHdkVH/ELVTR-AIPD1---09-Designing-AI-UI-Experiences?node-id=79-38736&m=dev)
 
 AI can imitate a design system without actually using it. This lesson moves from that distinction
 to a workflow in which AI receives current, queryable system context, generated output is verified,

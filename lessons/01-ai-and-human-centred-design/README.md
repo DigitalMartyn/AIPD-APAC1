@@ -3,7 +3,6 @@
 > **Course:** ELVTR — AI Product Development (AIPD1), APAC cohort
 > **Lesson:** 01 · AI and Human-Centred Design
 > **Theme:** *AI collapses the build loop — design becomes judgment.*
-> **Source board:** [ELVTR AIPD1 — 01 AI as a Tool for Innovation and Empowering Human-Centred Design (FigJam)](https://www.figma.com/board/yejw5MnVCCD87cr7Z774j6/ELVTR-AIPD1---01-AI-as-a-Tool-for-Innovation-and-Empowering-Human-Centred-Design)
 
 ## Contents — three shifts
 

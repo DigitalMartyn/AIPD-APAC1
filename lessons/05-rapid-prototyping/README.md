@@ -5,7 +5,6 @@
 > **Instructor:** Martyn Gooding
 > **Framing:** *Prototypes drive clarity — now they run on top of AI. Clarity is the deliverable;
 > the prototype is just how we get there.*
-> **Source deck:** [ELVTR AIPD1 · 05 · Rapid Prototyping (Figma)](https://www.figma.com/design/AShKsdrKjJ6ixqZpnsj21K/ELVTR-AIPD1-%C2%B7-05-%C2%B7-Rapid-Prototyping)
 
 ## Agenda
 

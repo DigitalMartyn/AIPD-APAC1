@@ -4,7 +4,6 @@
 > **Lesson:** 03 · End-to-End Process for Designing AI Products
 > **Theme:** *How AI products move from a request or an idea, through build, to scale —
 > grounded in two real case studies.*
-> **Source board:** [ELVTR 03 · End-to-End Process for Designing AI Products (FigJam)](https://www.figma.com/board/qUe7gjHa3InrBp735gh5o8/ELVTR-03-%C2%B7-End-to-End-Process-for-Designing-AI-Products)
 
 ## Agenda
 

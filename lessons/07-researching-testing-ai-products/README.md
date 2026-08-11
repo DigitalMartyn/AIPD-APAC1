@@ -4,7 +4,6 @@
 > **Lesson:** 07 · Researching & Testing AI Products (deck: *User Testing AI Products*)
 > **Framing:** *Testing methods, real user sessions, and iteration with real usage —
 > Observe → Test → Iterate.*
-> **Source deck:** [ELVTR AIPD1 — 07 Researching & Testing AI Products (Figma)](https://www.figma.com/design/cLUAEY4oqmXvnJbJdEu9oV/ELVTR-AIPD1---07-Researching---Testing-AI-Products)
 
 ## The shift
 

@@ -5,7 +5,6 @@
 > **Instructor:** Martyn Gooding · AI for Designers
 > **Framing:** *You came in with a tested concept. You leave knowing how to make it
 > scale — Prototype → Production → Scale.*
-> **Source deck:** [ELVTR AIPD1 — 08 From Prototype to Scale (Figma)](https://www.figma.com/design/7e4neraAaNJrg4BrfPHOv2/ELVTR-AIPD1---08-From-Prototype-to-Scale?node-id=177-187)
 
 ## Where you start
 

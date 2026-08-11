@@ -18,7 +18,6 @@ keywords:
 > **Course:** ELVTR AI Product Design (AIPD1), APAC cohort
 > **Lesson:** 10, Ethical AI in Practice
 > **Instructor:** Martyn Gooding
-> **Source deck:** [ELVTR AIPD1: 10 Ethical AI Design](https://www.figma.com/design/uWeNFYJ2R7ks3eSyM7JVgA/ELVTR-AIPD1-10----Ethical-AI-Design?node-id=49-539&m=dev)
 
 Ethical AI design becomes useful when a principle changes a product decision. This lesson uses four
 real-world situations to examine who receives opportunity, what happens when conditions change,

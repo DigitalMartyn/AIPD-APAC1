@@ -4,7 +4,6 @@
 > **Lesson:** 02 · AI Fundamentals: Understanding Machine Learning and Principles
 > **Framing:** *An LLM product guide — the concepts every AI product designer should know, and why
 > each one changes how you design.*
-> **Source board:** [ELVTR AIPD1 — 02 AI Fundamentals (FigJam)](https://www.figma.com/board/iw7qf7LzT0SrfQHxVPIMQf/ELVTR-AIPD1---02-AI-Fundamentals--Understanding-Machine-Learning-and-Principles)
 
 > **Scope note:** the source deck also contains ~27 narrative "Slide" frames within these three
 > sections whose text lives in Figma components not exposed by the board API. This document

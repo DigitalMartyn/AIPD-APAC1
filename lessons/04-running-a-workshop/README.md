@@ -3,7 +3,6 @@
 > **Course:** ELVTR — AI Product Development (AIPD1), APAC cohort
 > **Lesson:** 04 · Running a Workshop
 > **Theme:** *How to run a workshop — creating clarity, alignment, and momentum in the room.*
-> **Source deck:** [ELVTR AIPD1 — 04 Running a Workshop (Figma)](https://www.figma.com/design/TI1hG9gayW3bSB7qwPNgqt/ELVTR-AIPD1---04-Running-a-Workshop?node-id=0-1)
 > **Spine:** The deck follows a single anonymised airport workshop end to end, introducing each
 > method and mindset at the moment it was used.
 
