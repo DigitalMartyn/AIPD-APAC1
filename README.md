@@ -24,6 +24,7 @@ and course assignments.
 | 07 | Researching & Testing AI Products | [lessons/07-researching-testing-ai-products](lessons/07-researching-testing-ai-products/README.md) |
 | 08 | From Prototype to Scale | [lessons/08-from-prototype-to-scale](lessons/08-from-prototype-to-scale/README.md) |
 | 09 | User Interface Design in the Age of AI | [lessons/09-designing-ai-ui-experiences](lessons/09-designing-ai-ui-experiences/README.md) |
+| 10 | Ethical AI in Practice | [lessons/10-ethical-ai-design](lessons/10-ethical-ai-design/README.md) |
 
 ## Assignments
 
