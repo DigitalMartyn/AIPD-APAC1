@@ -3,7 +3,9 @@
 > **Course:** ELVTR — AI Product Development (AIPD1), APAC cohort
 > **Lesson:** 04 · Running a Workshop
 > **Theme:** *How to run a workshop — creating clarity, alignment, and momentum in the room.*
-> **Source deck:** [ELVTR AIPD1 — 04 Running a Workshop (Figma)](https://www.figma.com/design/TI1hG9gayW3bSB7qwPNgqt/ELVTR-AIPD1---04-Running-a-Workshop)
+> **Source deck:** [ELVTR AIPD1 — 04 Running a Workshop (Figma)](https://www.figma.com/design/TI1hG9gayW3bSB7qwPNgqt/ELVTR-AIPD1---04-Running-a-Workshop?node-id=0-1)
+> **Spine:** The deck follows a single anonymised airport workshop end to end, introducing each
+> method and mindset at the moment it was used.
 
 ---
 
@@ -27,7 +29,49 @@ Running a workshop well is where *how we think* becomes visible and valuable to 
 
 ---
 
-## 2. Before the room
+## 2. The workshop flow — one engagement, end to end
+
+The lesson threads a single anonymised **airport workshop** through the whole deck: one engagement,
+followed end to end, introducing each method and mindset at the moment it was used.
+
+> *"We follow a typical workshop for an airport customer. As the case unfolds, we introduce the
+> methods we used and the mindsets that made them work."*
+
+### An example workshop flow
+
+A representative engagement runs through six moves, widening to set ambition and narrowing toward a
+buildable definition:
+
+1. **Exec Vision Panel** — put leadership ambition on the record.
+2. **Future Spectrums** — surface strategic tension and disagreement.
+3. **User Interviews / Jobs to Be Done** — ground the work in operational reality.
+4. **Human Moat** — locate durable human advantage versus automation.
+5. **Prioritisation** — rank opportunities by impact and effort.
+6. **Product Definition** — converge on what to actually build.
+
+### Case study: the airport workshop
+
+Leadership wanted AI to improve the passenger journey without losing operational accountability. The
+rest of this lesson uses that engagement to show each method and mindset in place, not in the
+abstract.
+
+### What the Exec Vision Panel produced
+
+The panel opens the workshop and puts leadership ambition on the record. In the airport session it
+produced statements the whole room could design against:
+
+- *"Make the airport feel calm, even when the operation is under pressure."*
+- *"Use AI to help people make better decisions — not to hide the decision."*
+- *"One passenger journey, not a collection of departmental systems."*
+- *"Start where operational friction and passenger anxiety meet."*
+- *"The platform should learn across journeys without losing local accountability."*
+- *"Success is adoption on the floor, not another strategy deck."*
+
+These become the shared strategic frame that later operational evidence and concepts trace back to.
+
+---
+
+## 3. Before the room
 
 ### Pre-work
 
@@ -66,7 +110,7 @@ Both work — they just fail differently.
 
 ---
 
-## 3. The mindset — five moves for running the room
+## 4. The mindset — five moves for running the room
 
 | Move | Principle |
 |------|-----------|
@@ -180,7 +224,7 @@ ends flat.
 
 ---
 
-## 4. Worked examples
+## 5. Worked examples
 
 Real moments that show the mindset in practice.
 
@@ -208,7 +252,7 @@ Real moments that show the mindset in practice.
 
 ---
 
-## 5. Choosing the right exercise
+## 6. Choosing the right exercise
 
 Every exercise has a job. Before you choose, ask:
 
@@ -222,7 +266,7 @@ room; the spectrum *is* the conversation.
 
 ---
 
-## 6. The exercises
+## 7. The exercises
 
 Ten exercises to surface perspectives, brought across from real workshops with a how-to-run for
 each.
@@ -263,14 +307,45 @@ Example spectrum poles used in real sessions:
 
 ---
 
-## 7. Closing — don't follow this religiously
+## 8. Workshop outcomes
+
+A workshop is not a pile of activities. It should leave the room with a connected set of decisions,
+evidence, and next steps.
+
+| # | Outcome | What it means |
+|----|-------------------------|-----------------------------------------------------------------------|
+| 01 | A shared vision | Leadership ambition translated into a frame the whole room can use |
+| 02 | Named strategic choices | The important disagreements are visible, discussed, and synthesised |
+| 03 | Operational evidence | Interview insights, Jobs to Be Done, and real workarounds from the floor |
+| 04 | A human–AI boundary | Clarity on what AI can handle, where oversight sits, and what stays human |
+| 05 | Prioritised concepts | Ideas ranked by impact and effort, the strongest shaped into a definition |
+
+---
+
+## 9. Methods and mindsets recap
+
+**Methods give structure. Mindsets make them work.** The case used both: repeatable ways to move
+the work forward, and facilitation choices that shaped the room.
+
+| Methods | Mindsets |
+|--------------------------------------|----------------------------------------------|
+| Executive Vision Panel | Work top-down and bottom-up |
+| Future Spectrums | Facilitate through provocation and synthesis |
+| User Interviews & Floor Tour | Create safety before honesty |
+| Jobs to Be Done | Surface tacit knowledge |
+| Human Moat Mapping | Use synthesis as leadership |
+| Impact / Effort + Product Definition | Connect today's talk to tomorrow's decision |
+
+---
+
+## 10. Closing — don't follow this religiously
 
 The deck is *the script*, not *a rulebook*. This is one way of running a workshop, not the only
 way. **Adapt it, change it, bring your own.**
 
 ---
 
-## 8. Appendices
+## 11. Appendices
 
 Supporting patterns and deep-dives — reference as needed.
 
@@ -326,7 +401,7 @@ Supporting patterns and deep-dives — reference as needed.
 
 ---
 
-## 9. Facilitator notes
+## 12. Facilitator notes
 
 Candid notes on the harder-to-execute moves.
 
