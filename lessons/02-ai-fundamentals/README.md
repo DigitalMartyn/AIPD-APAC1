@@ -5,10 +5,6 @@
 > **Framing:** *An LLM product guide — the concepts every AI product designer should know, and why
 > each one changes how you design.*
 
-> **Scope note:** the source deck also contains ~27 narrative "Slide" frames within these three
-> sections whose text lives in Figma components not exposed by the board API. This document
-> captures the fully-readable concept/diagram/example cards plus the section structure; the
-> narrative walkthrough slides are summarized rather than transcribed verbatim.
 
 ## Sections
 
