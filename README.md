@@ -21,11 +21,14 @@ and course assignments.
 | 03 | End-to-End Process for Designing AI Products | [lessons/03-end-to-end-process](lessons/03-end-to-end-process/README.md) |
 | 04 | Running a Workshop | [lessons/04-running-a-workshop](lessons/04-running-a-workshop/README.md) |
 | 05 | Rapid Prototyping | [lessons/05-rapid-prototyping](lessons/05-rapid-prototyping/README.md) |
-| 06 | TBC | [lessons/06-tbc](lessons/06-tbc/README.md) |
+| 06 | Designing and Shipping an AI Consumer Product | [lessons/06-shipping-ai-consumer-product](lessons/06-shipping-ai-consumer-product/README.md) |
 | 07 | Researching & Testing AI Products | [lessons/07-researching-testing-ai-products](lessons/07-researching-testing-ai-products/README.md) |
 | 08 | From Prototype to Scale | [lessons/08-from-prototype-to-scale](lessons/08-from-prototype-to-scale/README.md) |
 | 09 | User Interface Design in the Age of AI | [lessons/09-designing-ai-ui-experiences](lessons/09-designing-ai-ui-experiences/README.md) |
 | 10 | Ethical AI in Practice | [lessons/10-ethical-ai-design](lessons/10-ethical-ai-design/README.md) |
+| 11 | Designing for Conversational AI | [lessons/11-conversational-ai](lessons/11-conversational-ai/README.md) |
+| 12 | Professional Development | [lessons/12-professional-development](lessons/12-professional-development/README.md) |
+| 13 | Reviews and Presentations | [lessons/13-reviews-and-presentations](lessons/13-reviews-and-presentations/README.md) |
 
 ## Assignments
 
