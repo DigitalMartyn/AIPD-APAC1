@@ -1,76 +1,90 @@
-# Assignment 01 · Define & Frame Your Capstone Concept
+---
+title: "Assignment 01: Define and Frame Your Capstone Concept"
+description: Define the problem, target user, and role of AI for the capstone concept
+author: Martyn Gooding
+ms.date: 2026-08-19
+ms.topic: assignment
+keywords:
+  - AI product design
+  - capstone
+  - problem framing
+---
 
-> **Course:** ELVTR — AI Product Development (AIPD1), APAC cohort
-> **Assignment:** 01 · Define & Frame Your Capstone Concept
-> **Weight:** 10 points
-> **Format:** PDF, Figma Slides/File, or Google Slides link
-> **Due:** Before Class 7 (11/19)
+## Course details
+
+| Field | Detail |
+|-------|--------|
+| Course | ELVTR, AI Product Development (AIPD1), APAC cohort |
+| Assignment | 01, Define and Frame Your Capstone Concept |
+| Weight | 20 points |
+| Format | PDF, Figma Slides/File, or Google Slides link |
+| Due | Confirm with the instructor |
+
+## Supporting lessons
+
+This assignment draws only on the material covered immediately before it:
+
+1. Lesson 01, AI and Human-Centred Design
+2. Lesson 02, AI Fundamentals
+3. Lesson 03, End-to-End Process
 
 ## Overview
 
-From this point forward, your work focuses on a **single AI-driven product concept** that you
-will design, refine, and present as your capstone project. This assignment defines that concept
-clearly — framing the problem, identifying the opportunity for AI, and outlining measurable goals.
+Choose the single AI-driven product concept you will develop throughout the course. Define the
+problem clearly, identify the person who experiences it, and explain the role AI could play.
 
-The capstone is the through-line for the rest of the course. Treat this as the project kickoff:
-you're defining **what** your AI product is, **who** it serves, and **how** you'll measure success.
+Keep this first submission focused. You are establishing a credible starting point, not specifying
+the complete product.
 
 ## Objective
 
-1. Identify a problem area that can be improved or re-imagined with AI.
-2. Define the user, context, and value proposition for your concept.
-3. Describe how AI will play a role — what it will do, how it will help, and why it matters.
-4. Establish early success metrics or signals that define what "working well" looks like.
+1. Identify a real problem or opportunity that could be improved with AI.
+2. Define the target user and the context in which they experience the problem.
+3. Describe the role AI plays and why that capability is relevant.
 
 ## Deliverable
 
-A short written brief **or** a 5–7 slide presentation that includes:
+Submit a short written brief or a 3 to 5-slide presentation that includes:
 
 | Section | What to include |
 |---------|-----------------|
-| **Problem Statement** | A concise description of the challenge or opportunity. |
-| **Target User** | Who the product serves and what their needs are. |
-| **AI Role** | How AI contributes (predict, generate, classify, guide, assist, etc.). |
-| **Ethical Considerations** | Early thinking about data, bias, or transparency concerns. |
-| **Success Metrics** | 2–3 measurable outcomes that define success for your concept. |
-| **Information Flow** | A quick sketch or flow diagram showing how the product might work. |
+| Problem statement | A concise, solution-free description of the challenge or opportunity |
+| Target user | Who experiences the problem, their context, and what they need to achieve |
+| AI role | What the AI contributes, such as predicting, generating, classifying, guiding, or assisting |
 
 ## Steps
 
-### Step 1 · Define the problem & user
+### Step 1: Define the problem
 
-- What real-world issue, friction point, or inefficiency are you addressing?
-- Who experiences this problem, and why does it matter to them?
-- What is your user's goal or motivation in this scenario?
+* Describe the real-world issue, friction point, or missed opportunity.
+* Keep the proposed solution out of the problem statement.
+* Explain why the problem matters now.
 
-### Step 2 · Identify the AI's contribution
+### Step 2: Define the target user
 
-- How might AI improve, predict, or personalize this experience?
-- What kind of model or capability might be involved (e.g., NLP, CV, recommender system)?
-- Is the AI acting as a helper, advisor, generator, or collaborator?
+* Identify the primary person who experiences the problem.
+* Describe their context, goal, and current way of handling the situation.
+* Make the user specific enough that another person could recognise them.
 
-### Step 3 · Outline success & ethics
+### Step 3: Identify the role of AI
 
-- What does success look like for your user or organization?
-- What potential risks or biases might appear, and how could you address them?
-- How will you know the AI is "helping" rather than harming the experience?
+* Name the AI capability the concept relies on.
+* Explain what the AI contributes to the user's task.
+* Explain why AI is more appropriate than a simpler digital feature or process change.
 
-## Rubric (10 pts)
+## Rubric
 
 | Criteria | Points |
 |----------|:------:|
-| Attempted the assignment | 1 |
-| Step 1: Defines clear problem and target user | 3 |
-| Step 2: Describes AI's contribution and purpose | 3 |
-| Step 3: Establishes success metrics and ethical lens | 2 |
-| Clarity, structure, and presentation quality | 1 |
-| **Total** | **10** |
+| Attempted the assignment | 2 |
+| Defines a clear, solution-free problem | 6 |
+| Defines a specific target user and context | 6 |
+| Explains the role and relevance of AI | 4 |
+| Clarity, structure, and presentation quality | 2 |
+| **Total** | **20** |
 
 ## Use of generative AI tools
 
-You are encouraged to use generative AI tools (e.g., ChatGPT, Figma AI, Midjourney, Claude, or
-others) to brainstorm ideas, structure your document, or create supporting visuals. However,
-these tools **should not do the entirety of the work**.
-
-Your submission must reflect your own reasoning, perspective, and understanding of the problem and
-solution. Treat AI as a creative partner, not a substitute for your design thinking.
+You may use generative AI tools to brainstorm, challenge assumptions, structure your submission,
+or create supporting visuals. Your submission must still reflect your own reasoning and
+understanding of the problem. Treat AI as a creative partner, not a substitute for your judgement.

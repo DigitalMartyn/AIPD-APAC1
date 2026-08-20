@@ -183,19 +183,14 @@ The instructor provides sign-off at the final presentation on 14 Oct.
 
 Every project must cover, at minimum:
 
-1. Problem framing and AI rationale: the opportunity, user need, reason for using AI, and success
-   metrics (Assignment 1).
-2. Product proposition and system behaviour: what the system does, its inputs and outputs, where
-   the model sits in the flow, and what it does when it is uncertain or wrong (Assignment 2).
-3. Core experience flows: the end-to-end journey, key screens or moments, states such as empty,
-   loading, low-confidence, error, and escalation, plus a testing plan (Assignment 3).
-4. Interactive prototype: a clickable or conversational prototype of the core experience, using
-   components and design system thinking (Assignment 4).
-5. Ethics and responsibility: bias, fairness, transparency, privacy, consent, and regulation as
-   they apply to your sector, with the design decisions you made in response (Assignment 4).
-6. Learning and iteration plan: how the product improves from real usage and what you would measure
-   to know it is improving (Assignment 4).
-7. The case study narrative: the complete story, presented (Assignment 5).
+1. Problem framing: the problem, target user, and role of AI (Assignment 1, Lessons 1 to 3).
+2. Product definition: one or two workshop artefacts, a product proposition, and a focused rapid
+  prototype (Assignment 2, Lessons 4 to 6).
+3. Testing and experience design: a test plan, evidence, end-to-end flow, key screens, uncertainty
+  and failure states, and the next iteration (Assignment 3, Lessons 7 to 9).
+4. Learning and responsibility: an updated prototype, ethical assessment, learning plan,
+  guardrails, and conversational rationale where relevant (Assignment 4, Lessons 10 and 11).
+5. The case study narrative: the complete story, presented (Assignment 5, Lessons 12 and 13).
 
 ### What might be in scope
 
@@ -257,7 +252,7 @@ alongside each item.
 | Scope creep into a whole platform | Nothing is finished to a portfolio standard | Lock one core journey by Assignment 2. Park everything else in a future scope section |
 | No access to real users | Unvalidated assumptions throughout | Recruit in week one; fall back to proxy research and label it as such |
 | Sector chosen for novelty, not knowledge | You cannot answer basic domain questions in the final review | Pick a sector you can discuss credibly or invest early in a domain contact |
-| Ethics treated as an add-on section at the end | The most scrutinised part of an AI case study reads as boilerplate | Log ethical questions from week one; module 10 sharpens them rather than starting them |
+| Ethics treated as generic language | The most scrutinised part of an AI case study reads as boilerplate | Apply the Lesson 10 assessment to the specific product and sector in Assignment 4 |
 | Designing the happy path only | AI products fail in the unhappy path, which reviewers probe | Design uncertain, wrong, and escalation states as first-class work in Assignment 3 |
 | Over-reliance on AI tooling for your own thinking | Generic output with no distinct point of view | Use AI to accelerate synthesis, not to make the calls. Keep a decision log in your own words |
 | Missing the 14 Oct presentation | You present incomplete work and there is no second slot | Work to the checkpoint dates, not the final date |
@@ -267,13 +262,13 @@ alongside each item.
 
 ### Per assignment
 
-| Number | Deliverable | Artefacts |
-|--------|-------------|-----------|
-| 1 | AI Product Opportunity and Framing | Problem statement, user need, AI rationale, target audience, success metrics, and opportunity framing from your workshop |
-| 2 | Product Prototype | Product proposition, system behaviour definition, data inputs and outputs, and concept prototype |
-| 3 | User Experience Flow | End-to-end flows, key states and interactions, wireframes or screens, and testing plan |
-| 4 | Learning, Iteration, and Responsibility | Interactive prototype with UI components, ethical risk assessment and design responses, and iteration plan |
-| 5 | Final AI Product Case Study | Complete end-to-end case study and live presentation |
+| Number | Deliverable | Supporting lessons | Artefacts |
+|--------|-------------|--------------------|-----------|
+| 1 | Define and Frame | Lessons 1 to 3 | Problem statement, target user, and role of AI |
+| 2 | Shape and Prototype | Lessons 4 to 6 | One or two workshop artefacts, product proposition, prototype choice, rapid prototype, and reflection |
+| 3 | Test and Design the Experience | Lessons 7 to 9 | Test plan, findings, experience flow, screens and states, and next iteration |
+| 4 | Learning, Iteration, and Responsibility | Lessons 10 and 11 | Updated prototype, ethical assessment, learning plan, guardrails, and conversational rationale |
+| 5 | Final AI Product Case Study | Lessons 12 and 13 | Complete end-to-end case study and live presentation |
 
 ### Final case study contents
 

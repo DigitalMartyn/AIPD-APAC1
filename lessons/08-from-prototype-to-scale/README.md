@@ -3,19 +3,18 @@
 > **Course:** ELVTR — AI Product Development (AIPD1), APAC cohort
 > **Lesson:** 08 · From Prototype to Scale (deck: *From Prototype to Scale*)
 > **Instructor:** Martyn Gooding · AI for Designers
-> **Framing:** *You came in with a tested concept. You leave knowing how to make it
+> **Framing:** *You came in with a prototype and early test evidence. You leave knowing how to make it
 > scale — Prototype → Production → Scale.*
 
 ## Where you start
 
 **You're not starting from zero.** By now you've done the hard part:
 
-- **You've got a product** *(from Assignment 02)* — a working, end-to-end, full-featured and tested
-  experience, even if it isn't edge-case-complete yet.
-- **That's your starting line** — feature-complete and tested. This is not incubation from scratch;
-  you enter with something real in your hands.
-- **Next is Assignment 03** — scaling and productionising the UI. The next lessons take this from
-  *working* to *shippable and scalable*.
+- **You have a prototype** *(from Assignment 02)* and early test evidence from Lesson 07.
+- **That is your starting line.** You are not incubating from scratch; you enter with something
+  tangible and evidence about how people use it.
+- **Next is Assignment 03.** Lessons 7 to 9 take the concept from a focused prototype to a tested,
+  end-to-end experience with production and scale considerations.
 
 *(The UX and the research are already behind you. From here, it gets real.)*
 
@@ -221,14 +220,15 @@ something repeatable and standards-aligned, built from four pieces:
 
 ### The through-line · Your concept becomes a scalable product
 
-This is the lesson where your tested concept becomes something you can actually ship and scale.
-Lessons 5 and 7 got you here:
+This is the lesson where your prototype and early test evidence meet the realities of shipping and
+scale. Lessons 5 and 7 got you here:
 
 - **Lesson 5** — you built a prototype.
 - **Lesson 7** — you tested it with users.
 - **Lesson 8** — you productionise it, and scale it.
 
-*(Tested concept on one side, a shippable product on the other. This lesson is the bridge.)*
+*(Prototype and test evidence on one side, a scalable product direction on the other. This lesson
+is the bridge.)*
 
 ### Your role · Designers who ship
 
@@ -313,13 +313,12 @@ Three ways of thinking about scale, and a way to actually get there:
 3. **Productionising with HVE-Core** *(designers who ship)* — direct an AI workflow to take your
    concept from prototype to production-ready.
 
-> You came in with a tested concept. You leave knowing how to make it scale.
+> You came in with a prototype and early test evidence. You leave knowing how to make it scale.
 
 ---
 
 ## Related assignment
 
-This lesson leads into **Assignment 03 · Scaling & Productionising the UI** — take the working,
-tested product from Assignment 02 and make it shippable and scalable. Use the production-ready
-checklist as your bar, and HVE-Core to close the gap between "worked in the demo" and "works in
-production".
+This lesson contributes to **Assignment 03: Test and Design the Experience** (Lessons 7 to 9). Use
+the scale and production considerations to strengthen the experience flow, key states, and next
+iteration without presenting the prototype as production software.

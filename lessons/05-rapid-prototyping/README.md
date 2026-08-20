@@ -197,9 +197,10 @@ Bring your answer to the next session; we'll pressure-test the slice, not the pi
 
 ## Related work
 
-- Rapid prototyping feeds your **capstone** (Assignment 01 defines the AI product you'll prototype,
-  refine and present).
-- The prototype you build here is the input to **Assignment 02 · Prototype & Test** (Lessons 5 + 7).
+- Rapid prototyping feeds your **capstone** (Assignment 01 defines the AI product you will
+  prototype, refine, and present).
+- The prototype you build here contributes to **Assignment 02: Shape and Prototype Your Concept**
+  (Lessons 4 to 6).
 
 ## Referenced tools & links
 

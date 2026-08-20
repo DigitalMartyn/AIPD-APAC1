@@ -207,8 +207,6 @@ The deck includes run-of-show workshop templates for practising these methods:
 
 ## Related assignment
 
-This lesson feeds **Assignment 02 · Prototype & Test** (Lessons 5 + 7): turn your concept into a
-working prototype, then test it with users *with intent*. Submit the prototype (built from your
-workshop artefacts), the question you're testing, the method (task-based · think-aloud · failure ·
-walkthrough), who & where you tested, findings with evidence, and the next iteration your testing
-points to. *(Format: PDF, Figma, or Slides. Weight/due: TBC — after Lesson 7.)*
+This lesson feeds **Assignment 03: Test and Design the Experience** (Lessons 7 to 9). Test the
+prototype with intent, capture behavioural evidence, and use the findings to shape the experience
+flow, interface states, and next iteration.

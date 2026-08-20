@@ -268,8 +268,8 @@ Use this sequence when creating an AI-assisted interface:
 
 **Design systems make adaptation governable.**
 
-## Assignment 03 status
+## Related assignment
 
-> [!NOTE]
-> The source deck intentionally leaves Assignment 03 unconfirmed. Its title, deliverables, points,
-> and due date remain open until the course brief is supplied.
+This lesson contributes to **Assignment 03: Test and Design the Experience** (Lessons 7 to 9). Use
+the interface workflow to develop key screens, define relevant uncertainty and failure states, and
+verify the experience against the chosen design system.
