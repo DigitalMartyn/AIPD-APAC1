@@ -8,3 +8,9 @@
 # Temp
 *.tmp
 *.log
+
+# Secrets
+.env
+
+# Python
+__pycache__/

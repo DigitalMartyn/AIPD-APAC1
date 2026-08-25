@@ -1,139 +1,240 @@
-# Lesson 01 · AI as a Tool for Innovation & Empowering Human-Centred Design
+---
+title: "Lesson 01: AI as a Tool for Innovation and Empowering Human-Centred Design"
+description: Deciding when AI is the right answer, framing solution-free problem statements, and the three decisions that shape an AI experience
+author: Martyn Gooding
+ms.date: 2026-08-25
+ms.topic: concept
+keywords:
+  - human-centred design
+  - problem framing
+  - AI capability
+  - AI product lifecycle
+  - AI roles
+---
 
-> **Course:** ELVTR — AI Product Development (AIPD1), APAC cohort
-> **Lesson:** 01 · AI and Human-Centred Design
-> **Theme:** *AI collapses the build loop — design becomes judgment.*
+## Lesson details
+
+> **Course:** ELVTR AI Product Development (AIPD1), APAC cohort
+> **Lesson:** 01, AI and Human-Centred Design
+> **Instructor:** Martyn Gooding
+> **Working question:** When is AI the right answer?
+> **Deck:** [Lesson 01 slides](https://www.figma.com/slides/J048gt9ZAMUSYmuyyGL9IK)
+
+Design work now starts earlier than the screen. When a model can produce a plausible interface in
+seconds, the scarce skill becomes deciding what deserves to exist, and for whom. This lesson gives
+you a test for whether AI belongs in a product at all, then the language to frame the problem it
+solves.
+
+## Outcomes
+
+By the end of the session you can:
+
+1. Decide whether AI is genuinely the right answer to a problem, and say why.
+2. Write a solution-free problem statement with a named user in a named context.
+3. Explain what Assignment 01 asks for and how it is graded.
 
 ## Contents
 
-The lesson is built around three shifts:
-
-1. **Design has changed** — design moves from execution to judgment.
-2. **AI is not the product** — design the capability, not the AI.
-3. **The future of product design** — a real capability meets a real human tension.
+1. Design has changed: execution gives way to judgment
+2. AI is not the product: design the capability
+3. Three decisions that shape the AI experience
+4. Framing the problem: the two statements
+5. Where this goes: the AI product lifecycle
 
 ---
 
-## Section 01 · Design has changed
+## Section 01: Design has changed
 
-**Design has changed in five years.** The old pipeline broke; what replaces it is a different job.
-
-- **It's not about the tools — which designer are you?** Make the thing look good, or figure out
-  what the right thing even is? AI can do the first; it cannot do the second.
-- **Prototyping collapses the loop** *(the new table-stake)* — build it in Claude Code or Cursor. A
-  prototype that behaves like the real product reveals what a Figma file never will.
-
-### The shift · 2020 → now
-
-**The middle-person job is gone. The new job is deciding what's worth building.**
+The old pipeline broke. The middle-person job, owning the file and handing it off, has gone. What
+replaces it is a different job: deciding what is worth building, then building it.
 
 | Then | The break | Now |
 |------|-----------|-----|
 | Own Figma. Hand off. Wait for someone else to ship. | AI collapsed the handoff between idea and build. | Figure out the right thing, then build it yourself. |
 
-### Two diverging worlds
+### The curator's seven moves
 
-*Where you work now matters — expectations for designers have split sharply by company.*
+The role shifts from specialist to curator, assembling and directing AI-generated work into a
+product. Creativity expands rather than shrinks.
 
-- **Moving slow:** make screens pretty and present them in review.
-- **Moving fast:** think in systems, move into code, run research, and actually ship.
-- **The gap:** getting wider every month.
+| Move | What it means |
+|------|---------------|
+| Frame the problem | Decide what is actually worth solving |
+| Ground it in the user | Keep the real human need in view |
+| Direct the AI | Set the intent and steer the output |
+| Assemble the pieces | Compose generated parts into a whole |
+| Verify the facts | Check that what the model produced is true |
+| Set the guardrails | Define the limits it must work within |
+| Own the outcome | You remain accountable for the result |
 
-### Designer, meet curator
-
-The role shifts from specialist to curator: assembling, adapting, and directing AI-generated work
-into great products. **Creativity expands, it doesn't shrink.** Seven moves make up the curator's
-job:
-
-- **Frame the problem** — decide what's actually worth solving.
-- **Ground it in the user** — keep the real human need in view.
-- **Direct the AI** — set the intent and steer the output.
-- **Assemble the pieces** — compose AI-generated parts into a whole.
-- **Verify the facts** — check what the AI produced is true.
-- **Set the guardrails** — define the limits it must work within.
-- **Own the outcome** — you're accountable for the result.
-
-What changes about the work:
-
-| Fades | Stays | Grows |
-|-------|-------|-------|
-| Pixel-perfect wireframes, weeks of UI exploration, handoff docs | Gut, taste, and raw creativity | Systems thinking, shipping, product architecture |
-
-> **Systems:** know how your work fits the product, business, and tech.
+Moves one and two carry the rest of this lesson. The remaining five return in Lesson 02 and
+Lesson 07.
 
 ---
 
-## Section 02 · AI is not the product
+## Section 02: AI is not the product
 
-> Design the capability, not the AI.
+Nobody wants AI. They want a job done faster, more easily, or better than before. So get clear on
+what the product actually is before designing it.
 
-### Product definition · what are we building?
+A feature is something a product already does. A capability is something AI makes possible that was
+not possible before.
 
-Get clear on what the product actually *is* before you design it — a **capability**, not just a
-**feature**:
+### The test
 
-- A **feature** is something a product already does. A **capability** is something AI makes possible
-  that wasn't before.
-- **The test:** *Remove the AI. Does the product still exist?* **Yes → feature. No → capability.**
+> Remove the AI. Does the product still exist?
+>
+> Yes, it is a feature. No, it is a capability.
 
-**Example — autocomplete vs Copilot:**
+| Feature: autocomplete | Capability: Copilot |
+|-----------------------|---------------------|
+| Corrects what you already wrote | Writes what you had not yet written |
+| Same task, fewer typos | A new task becomes possible |
+| Remove the AI and you still type | Remove the AI and there is nothing |
 
-| Feature · Autocomplete | Capability · Copilot |
-|------------------------|----------------------|
-| Corrects what you already wrote. Same task, fewer typos. Remove the AI — you still type. | Writes what you hadn't yet. A new task becomes possible. Remove the AI — there's nothing. |
+### The test is a spectrum, not a binary
 
-> Ask: does AI change what's *possible*, or just make the existing thing *faster*? That answer sets
-> your entire design approach.
+Run in class as an exercise: apply the test to both examples, then find where it falls apart. It
+does fall apart, and that is the point. Autocomplete is itself a predictive model, and Copilot
+often just finishes the line you were already typing.
 
-### Three decisions that shape the AI experience
+The sharper question is one of degree: how much of the user's job disappears when you remove the
+model?
 
-For any AI feature, decide where the human sits. Each choice is a trade-off with a question to ask:
+| Autocomplete | Copilot | Adobe Express AI mode |
+|--------------|---------|-----------------------|
+| The model helps you type | The model does a task you could not | The model does the job |
+
+### Worked example: Adobe Express AI Assistant
+
+The first instinct was a conversational panel bolted onto the canvas. Chat asks the user to
+describe the work, and the work still is not done. The team moved to an assistant that acts on the
+canvas instead.
+
+> "We're not a chatbot, we're a do-bot."
+>
+> George Goodman, Lead PM, in *Behind the Design: Adobe Express AI Assistant*, adobe.design,
+> December 2025.
+
+---
+
+## Section 03: Three decisions that shape the AI experience
+
+Once you know you are designing a capability, you owe three decisions about where the human sits.
+Neither pole is correct in isolation. The trade-off is the design decision.
 
 | Decision | One side | Other side | Ask |
 |----------|----------|------------|-----|
-| **Who does the work?** | **Search** — you get a list of links, read them, and work out the answer yourself. | **Answers** — you get one answer written for you; the AI did the reading, you just check it's right. | Does the person still do the work, or does the AI? It changes what they need from you. |
-| **Steps or goal?** | **Buttons** — press the steps in order; quick once you know how, but you have to learn them. | **Just ask** — say what you want in plain words; the AI works out the steps. Good when the steps are hard. | Does the person know the steps, or just the goal? Let them ask when the steps are hard. |
-| **Prevent or undo?** | **Undo** — the person spots the mistake and fixes it; fine when mistakes are easy to see and undo. | **Prevent** — the product stops the mistake first; needed when mistakes are hidden or too costly to undo. | Will the person notice a wrong answer? If not, stop the mistake before it happens. |
+| Who does the work? | Search: you get a list of links, read them, and work out the answer yourself | Answers: you get one answer written for you, and you check it is right | Does the person still do the work, or does the AI? It changes what they need from you |
+| Steps or goal? | Buttons: press the steps in order, quick once learned | Just ask: say what you want in plain words and the AI works out the steps | Does the person know the steps, or just the goal? Let them ask when the steps are hard |
+| Prevent or undo? | Undo: the person spots the mistake and fixes it | Prevent: the product stops the mistake first | Will the person notice a wrong answer? If not, stop the mistake before it happens |
+
+### Worked case: Cursor
+
+Before applying changes across a codebase, Cursor states the actual consequence.
+
+> "This will edit 14 files across 3 directories" beats "Are you sure?"
+
+Show the real consequence, not a generic confirmation. Lesson 02 returns to this pattern as
+human-in-the-loop control.
 
 ---
 
-## Section 03 · The future of product design
+## Section 04: Framing the problem
 
-> The future belongs to AI-native designers — a real capability meeting a real human tension.
+Assignment 01 puts 12 of its 20 points on problem framing and user definition, so this section
+carries the most weight in the room.
 
-- **AI isn't a threat, it's a new era.** Don't underestimate AI and overestimate your skills.
-  Change, learn, adapt — with urgency — and help shape what comes next.
-- **Hands-on is the new default.** From IC to VP, staying close to the work is the expectation. As
-  AI speeds execution, judgment to craft the right thing beats polish. Punk is coming back:
-  authenticity over glossy perfection.
-- **AI makes the best designers faster.** No wasted cycles on concepts that don't move the needle;
-  discovery and delivery merge, and the real output is a working product, shipped quickly.
-- **The teams are merging.** Design, product, and engineering lines are blurring, and the merge is
-  only accelerating:
-  - **AI literacy** — a baseline now, not a bonus.
-  - **Ship to prod** — designers ship; no more handoff mindset.
-  - **PMs prototype** — long specs out, fast iterations in.
-  - **Forward Deployed Engineering** — designers embedded alongside engineers, building together.
-- **Taste** is the through-line: AI makes it functional; taste makes it stand out.
+Two statements about the same situation:
+
+| Verdict | Statement |
+|:-------:|-----------|
+| ✗ | Warehouse supervisors need an AI dashboard |
+| ✓ | Warehouse supervisors cannot tell which of 40 open exceptions actually needs them today |
+
+The first forecloses every solution. The second names a decision a person cannot make.
+
+### Exercise: write your pair
+
+Take the idea you walked in with and write both versions of it. The second version must name a
+role, a context, and the decision they cannot make. No solution words: if the sentence contains the
+answer, it is not a problem statement.
+
+Read-outs are diagnosed against three checks:
+
+1. Is there a solution hiding inside the sentence?
+2. Can you picture the person, in a place, on a day?
+3. Is there a decision they cannot make right now?
 
 ---
 
-## Outtake · Three shifts to carry
+## Section 05: Where this goes
 
-1. **Design is judgment now** — when AI does the making, you curate, edit, and decide.
-2. **AI is not the product** — design the capability, not the AI.
-3. **Innovation is a collision** — a real capability meeting a real human tension.
+Preview only. Lesson 03 covers the lifecycle in full, with two real case studies.
 
-> AI isn't a threat. It's a new era.
+| Stage | Stage |
+|-------|-------|
+| 01 Problem and Signal | 05 Private Preview |
+| 02 Product Definition | 06 Public Preview |
+| 03 Engineering Build | 07 General Availability |
+| 04 Release Readiness | 08 Operate and Iterate |
+
+Design leads at stage 02 and again at stage 05. Stage 08 re-enters stage 01, which is why
+Assignment 01 is a credible starting point rather than a specification.
+
+---
+
+## Run sheet
+
+Ninety minutes, eighteen slides. Timings live in the deck's speaker notes.
+
+| # | Slide | Minutes |
+|:--|-------|:-------:|
+| 1 | Title | |
+| 2 | What this lesson is for | 2 |
+| 3 | Design has changed | 3 |
+| 4 | The curator's seven moves | 5 |
+| 5 | AI is not the product | 3 |
+| 6 | The test | 4 |
+| 7 | Break my test (exercise) | 10 |
+| 8 | The test is a spectrum | 3 |
+| 9 | Worked example: Adobe Express | 5 |
+| 10 | Decision 01, who does the work | 5 |
+| 11 | Decision 02, steps or goal | 5 |
+| 12 | Decision 03, prevent or undo | 5 |
+| 13 | The two statements | 5 |
+| 14 | Write your pair (exercise) | 10 |
+| 15 | Read-out and live fix (exercise) | 8 |
+| 16 | The AI product lifecycle | 4 |
+| 17 | Assignment 01 | 10 |
+| 18 | One ask this week | 3 |
+| | **Total** | **90** |
+
+> [!TIP]
+> One ask before the next session: find one real person in your sector who lives with the problem
+> you are circling, and ask them what decision they cannot make today.
 
 ---
 
 ## Related assignment
 
-**Assignment 01 · Define & frame your capstone** *(spans Lessons 01–03)*. From here on, everything
-builds on one AI product concept: define what it is, who it serves, and the role AI plays.
+[Assignment 01, Define and Frame Your Capstone Concept](../../assignments/01-define-frame-capstone/README.md)
+spans Lessons 01 to 03. From here on, everything builds on one AI product concept.
 
-- **Deliver — a brief or 3–5 slides:** problem statement (concise, solution-free) · target user (who
-  it serves and their context) · AI role (predict, generate, classify, or guide) · why AI fits (more
-  than a simple feature).
-- **Format:** PDF, Figma, or Slides · **Weight:** 20 points · **Due:** before Lesson 5.
+The deliverable covers a solution-free problem statement, a target user with their context, and the
+role AI plays. That role is named from a fixed vocabulary:
+
+| Role | Example |
+|------|---------|
+| Predict | Churn scoring |
+| Generate | Draft copy |
+| Classify | Routing a ticket |
+| Guide | Next best action |
+| Assist | Co-editing |
+
+See the assignment page for format, weight, rubric, and submission details.
+
+> [!NOTE]
+> Career positioning content that previously sat in this lesson, covering hands-on expectations,
+> merging teams, and AI-native careers, now lives in
+> [Lesson 12, Professional Development](../12-professional-development/README.md).

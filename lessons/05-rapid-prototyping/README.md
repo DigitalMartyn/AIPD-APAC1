@@ -5,6 +5,7 @@
 > **Instructor:** Martyn Gooding
 > **Framing:** *Prototypes drive clarity — now they run on top of AI. Clarity is the deliverable;
 > the prototype is just how we get there.*
+> **Source deck:** [ELVTR AIPD1 · 05 · Rapid Prototyping (Figma)](https://www.figma.com/design/AShKsdrKjJ6ixqZpnsj21K/ELVTR-AIPD1-%C2%B7-05-%C2%B7-Rapid-Prototyping)
 
 ## Agenda
 
@@ -197,10 +198,9 @@ Bring your answer to the next session; we'll pressure-test the slice, not the pi
 
 ## Related work
 
-- Rapid prototyping feeds your **capstone** (Assignment 01 defines the AI product you will
-  prototype, refine, and present).
-- The prototype you build here contributes to **Assignment 02: Shape and Prototype Your Concept**
-  (Lessons 4 to 6).
+- Rapid prototyping feeds your **capstone** (Assignment 01 defines the AI product you'll prototype,
+  refine and present).
+- The prototype you build here is the input to **Assignment 02 · Prototype & Test** (Lessons 5 + 7).
 
 ## Referenced tools & links
 
