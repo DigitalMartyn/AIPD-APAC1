@@ -3,31 +3,28 @@
 > **Course:** ELVTR — AI Product Development (AIPD1), APAC cohort
 > **Lesson:** 01 · AI and Human-Centred Design
 > **Theme:** *AI collapses the build loop — design becomes judgment.*
+> **Source:** delivered slide deck (Figma export, 37 slides) — [ELVTR AIPD1 · 01 AI and Human-Centred Design](https://www.figma.com/board/yejw5MnVCCD87cr7Z774j6/ELVTR-AIPD1---01-AI-as-a-Tool-for-Innovation-and-Empowering-Human-Centred-Design)
 
-## Contents — three shifts
+## Contents
 
-1. **From maker to curator** — design moves from execution to judgment.
+The lesson is built around three shifts:
+
+1. **Design has changed** — design moves from execution to judgment.
 2. **AI is not the product** — design the capability, not the AI.
-3. **Innovation is a collision** — a real capability meets a real human tension.
+3. **The future of product design** — a real capability meets a real human tension.
 
 ---
 
-## Intro · How design has changed
+## Section 01 · Design has changed
 
-- **Design has changed in five years.** The old pipeline broke; what replaces it is a different
-  job.
+**Design has changed in five years.** The old pipeline broke; what replaces it is a different job.
+
 - **It's not about the tools — which designer are you?** Make the thing look good, or figure out
-  what the right thing even is? AI can do the first. It cannot do the second.
-- **Prototyping collapses the loop** *(the new table-stake)*. Build it in Claude Code or Cursor. A
+  what the right thing even is? AI can do the first; it cannot do the second.
+- **Prototyping collapses the loop** *(the new table-stake)* — build it in Claude Code or Cursor. A
   prototype that behaves like the real product reveals what a Figma file never will.
 
----
-
-## Shift 01 · From maker to curator
-
-> AI collapses the build loop — design becomes judgment.
-
-### The shift (2020 → now)
+### The shift · 2020 → now
 
 **The middle-person job is gone. The new job is deciding what's worth building.**
 
@@ -46,37 +43,39 @@
 ### Designer, meet curator
 
 The role shifts from specialist to curator: assembling, adapting, and directing AI-generated work
-into great products. **Creativity expands, it doesn't shrink.**
+into great products. **Creativity expands, it doesn't shrink.** Seven moves make up the curator's
+job:
 
-- **Fades:** pixel-perfect wireframes, weeks of UI exploration, handoff docs.
-- **Stays:** gut, taste, and raw creativity.
-- **Grows:** systems thinking, shipping, product architecture.
+- **Frame the problem** — decide what's actually worth solving.
+- **Ground it in the user** — keep the real human need in view.
+- **Direct the AI** — set the intent and steer the output.
+- **Assemble the pieces** — compose AI-generated parts into a whole.
+- **Verify the facts** — check what the AI produced is true.
+- **Set the guardrails** — define the limits it must work within.
+- **Own the outcome** — you're accountable for the result.
 
-### Recap · Shift 01
+What changes about the work:
 
-1. **Execution got cheap.** AI collapsed the cost of making — a prototype is now almost free.
-2. **Judgment got valuable.** Your edge is taste, framing, and knowing what's worth building.
-3. **You're a curator now.** You select, shape, and reject — you don't just produce.
+| Fades | Stays | Grows |
+|-------|-------|-------|
+| Pixel-perfect wireframes, weeks of UI exploration, handoff docs | Gut, taste, and raw creativity | Systems thinking, shipping, product architecture |
 
-> **The beat:** the scarce skill is deciding what deserves to exist.
+> **Systems:** know how your work fits the product, business, and tech.
 
 ---
 
-## Shift 02 · AI is not the product
+## Section 02 · AI is not the product
 
 > Design the capability, not the AI.
 
-### Capability vs feature
+### Product definition · what are we building?
 
-- A **feature** is something a product already does. A **capability** is something AI makes
-  possible that wasn't before.
-- Most AI additions are features dressed up as capabilities. The difference is whether AI changes
-  the *nature of what's possible* — or just the *speed* of something existing.
-- **The test:** if you removed the AI, would the product still exist? **Yes → feature. No →
-  capability.**
-- *Why it matters for designers:* designing for capabilities requires a different approach —
-  you're not wrapping AI around a known interaction, you're designing for outcomes that didn't
-  previously exist.
+Get clear on what the product actually *is* before you design it — a **capability**, not just a
+**feature**:
+
+- A **feature** is something a product already does. A **capability** is something AI makes possible
+  that wasn't before.
+- **The test:** *Remove the AI. Does the product still exist?* **Yes → feature. No → capability.**
 
 **Example — autocomplete vs Copilot:**
 
@@ -84,73 +83,58 @@ into great products. **Creativity expands, it doesn't shrink.**
 |------------------------|----------------------|
 | Corrects what you already wrote. Same task, fewer typos. Remove the AI — you still type. | Writes what you hadn't yet. A new task becomes possible. Remove the AI — there's nothing. |
 
-Ask: does AI change what's possible, or just make the existing thing faster? That answer sets your
-entire design approach.
+> Ask: does AI change what's *possible*, or just make the existing thing *faster*? That answer sets
+> your entire design approach.
 
-### Systems, not just pixels *(skills)*
+### Three decisions that shape the AI experience
 
-Think in systems, ship fast, prompt fluently, and never outsource taste.
+For any AI feature, decide where the human sits. Each choice is a trade-off with a question to ask:
 
-- **Systems:** know how your work fits the product, business, and tech.
-- **Speed:** idea to working product beats polish.
-- **Taste:** AI makes it functional; taste makes it stand out.
-
-### Recap · Shift 02
-
-1. **Nobody wants AI.** They want the job done — faster, easier, better.
-2. **Design the capability.** Start from the outcome you enable, not the model.
-3. **AI is an ingredient.** It should disappear into a good experience.
-
-> **The beat:** if the AI is the headline, the product isn't ready.
+| Decision | One side | Other side | Ask |
+|----------|----------|------------|-----|
+| **Who does the work?** | **Search** — you get a list of links, read them, and work out the answer yourself. | **Answers** — you get one answer written for you; the AI did the reading, you just check it's right. | Does the person still do the work, or does the AI? It changes what they need from you. |
+| **Steps or goal?** | **Buttons** — press the steps in order; quick once you know how, but you have to learn them. | **Just ask** — say what you want in plain words; the AI works out the steps. Good when the steps are hard. | Does the person know the steps, or just the goal? Let them ask when the steps are hard. |
+| **Prevent or undo?** | **Undo** — the person spots the mistake and fixes it; fine when mistakes are easy to see and undo. | **Prevent** — the product stops the mistake first; needed when mistakes are hidden or too costly to undo. | Will the person notice a wrong answer? If not, stop the mistake before it happens. |
 
 ---
 
-## Shift 03 · Innovation is a collision
+## Section 03 · The future of product design
 
-> A real capability meets a real human tension.
+> The future belongs to AI-native designers — a real capability meeting a real human tension.
 
-### Recap · Shift 03
-
-1. **Capability alone isn't enough.** A clever model that solves nothing goes nowhere.
-2. **Tension alone isn't enough.** A real pain with no new leverage stays stuck.
-3. **Innovation is the collision.** New capability meeting a real human tension.
-
-> **The beat:** look for where a new power finally makes an old pain solvable.
-
----
-
-## The opportunity & the future
-
-### Demand is rising, unevenly *(the opportunity)*
-
-AI raises the stakes for judgment, so the best companies hire *more* designers, not fewer.
-
-- **Rising:** research, synthesis, and decision-making.
-- **Falling:** execution speed, screen production, handoff prep.
-- **Your move:** get on GitHub. Write your decisions. Build, don't just describe.
-
-### The teams are merging *(what's changing fast)*
-
-Design, product, and engineering lines are blurring, and the merge is only accelerating.
-
-- **AI literacy:** a baseline now, not a bonus.
-- **Ship to prod:** designers ship. No more handoff mindset.
-- **PMs prototype:** long specs out. Fast iterations in.
-
-### The future belongs to AI-native designers
-
-- **AI makes the best designers faster** *(productivity)*. No wasted cycles on concepts that don't
-  move the needle. Discovery and delivery merge; the real output is a working product, shipped
-  quickly.
-- **Hands-on is the new default** *(craft)*. From IC to VP, staying close to the work is the
-  expectation. As AI speeds execution, judgment to craft the right thing beats polish. Punk is
-  coming back: authenticity over glossy perfection.
+- **AI isn't a threat, it's a new era.** Don't underestimate AI and overestimate your skills.
+  Change, learn, adapt — with urgency — and help shape what comes next.
+- **Hands-on is the new default.** From IC to VP, staying close to the work is the expectation. As
+  AI speeds execution, judgment to craft the right thing beats polish. Punk is coming back:
+  authenticity over glossy perfection.
+- **AI makes the best designers faster.** No wasted cycles on concepts that don't move the needle;
+  discovery and delivery merge, and the real output is a working product, shipped quickly.
+- **The teams are merging.** Design, product, and engineering lines are blurring, and the merge is
+  only accelerating:
+  - **AI literacy** — a baseline now, not a bonus.
+  - **Ship to prod** — designers ship; no more handoff mindset.
+  - **PMs prototype** — long specs out, fast iterations in.
+  - **Forward Deployed Engineering** — designers embedded alongside engineers, building together.
+- **Taste** is the through-line: AI makes it functional; taste makes it stand out.
 
 ---
 
-## In closing · AI isn't a threat, it's a new era
+## Outtake · Three shifts to carry
 
-Don't underestimate AI and overestimate your skills. Change, learn, adapt — with urgency — and help
-shape what comes next.
+1. **Design is judgment now** — when AI does the making, you curate, edit, and decide.
+2. **AI is not the product** — design the capability, not the AI.
+3. **Innovation is a collision** — a real capability meeting a real human tension.
 
-> **Your move:** get on GitHub. Write your decisions. Build, don't just describe.
+> AI isn't a threat. It's a new era.
+
+---
+
+## Related assignment
+
+**Assignment 01 · Define & frame your capstone** *(spans Lessons 01–03)*. From here on, everything
+builds on one AI product concept: define what it is, who it serves, and the role AI plays.
+
+- **Deliver — a brief or 3–5 slides:** problem statement (concise, solution-free) · target user (who
+  it serves and their context) · AI role (predict, generate, classify, or guide) · why AI fits (more
+  than a simple feature).
+- **Format:** PDF, Figma, or Slides · **Weight:** 20 points · **Due:** before Lesson 5.
