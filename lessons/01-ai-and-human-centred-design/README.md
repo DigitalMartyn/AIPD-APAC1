@@ -2,7 +2,7 @@
 title: "Lesson 01: AI as a Tool for Innovation and Empowering Human-Centred Design"
 description: Deciding when AI is the right answer, framing solution-free problem statements, and the three decisions that shape an AI experience
 author: Martyn Gooding
-ms.date: 2026-08-25
+ms.date: 2026-08-26
 ms.topic: concept
 keywords:
   - human-centred design
@@ -19,6 +19,7 @@ keywords:
 > **Instructor:** Martyn Gooding
 > **Working question:** When is AI the right answer?
 > **Deck:** [Lesson 01 slides](https://www.figma.com/slides/J048gt9ZAMUSYmuyyGL9IK)
+> **Instructor:** [run sheet and timings](RUNSHEET.md)
 
 Design work now starts earlier than the screen. When a model can produce a plausible interface in
 seconds, the scarce skill becomes deciding what deserves to exist, and for whom. This lesson gives
@@ -92,29 +93,20 @@ not possible before.
 | Same task, fewer typos | A new task becomes possible |
 | Remove the AI and you still type | Remove the AI and there is nothing |
 
-### The test is a spectrum, not a binary
+> **Why it matters for designers:** the answer sets your design scope. A feature inherits the trust
+> the product already has. A capability has to earn it, which means error states, confidence
+> signals, and a way for the person to check the work. Decide which you are building before
+> designing a single screen.
 
-Run in class as an exercise: apply the test to both examples, then find where it falls apart. It
-does fall apart, and that is the point. Autocomplete is itself a predictive model, and Copilot
-often just finishes the line you were already typing.
-
-The sharper question is one of degree: how much of the user's job disappears when you remove the
-model?
+The test is a threshold, not a wall. The sharper question is one of degree: how much of the user's
+job disappears when you remove the model?
 
 | Autocomplete | Copilot | Adobe Express AI mode |
 |--------------|---------|-----------------------|
 | The model helps you type | The model does a task you could not | The model does the job |
 
-### Worked example: Adobe Express AI Assistant
-
-The first instinct was a conversational panel bolted onto the canvas. Chat asks the user to
-describe the work, and the work still is not done. The team moved to an assistant that acts on the
-canvas instead.
-
-> "We're not a chatbot, we're a do-bot."
->
-> George Goodman, Lead PM, in *Behind the Design: Adobe Express AI Assistant*, adobe.design,
-> December 2025.
+Lesson 03 works through Adobe Express AI Assistant, where the team moved from a chat panel to an
+assistant that acts on the canvas. Same idea, fully evidenced.
 
 ---
 
@@ -128,6 +120,10 @@ Neither pole is correct in isolation. The trade-off is the design decision.
 | Who does the work? | Search: you get a list of links, read them, and work out the answer yourself | Answers: you get one answer written for you, and you check it is right | Does the person still do the work, or does the AI? It changes what they need from you |
 | Steps or goal? | Buttons: press the steps in order, quick once learned | Just ask: say what you want in plain words and the AI works out the steps | Does the person know the steps, or just the goal? Let them ask when the steps are hard |
 | Prevent or undo? | Undo: the person spots the mistake and fixes it | Prevent: the product stops the mistake first | Will the person notice a wrong answer? If not, stop the mistake before it happens |
+
+> **Why it matters for designers:** these three decisions set what the interface has to show, what
+> has to be reversible, and how much the person needs to understand about what just happened.
+> Lesson 02 picks up the third as human-in-the-loop control.
 
 ### Worked case: Cursor
 
@@ -154,6 +150,19 @@ Two statements about the same situation:
 
 The first forecloses every solution. The second names a decision a person cannot make.
 
+The same move, applied to the examples from Sections 02 and 03:
+
+| ✗ Solution-shaped | ✓ Problem-shaped |
+|-------------------|------------------|
+| Developers need AI-powered code completion | Developers lose their place re-typing method names they used ten lines above |
+| Developers need an AI coding assistant | Developers spend more time recalling syntax and writing boilerplate than solving the problem they were hired to solve |
+| The app needs simpler navigation | Daily users hit the same four screens every morning and want them one click away |
+| The app needs an AI chat assistant | Occasional users know what they need from the data but not which of forty menu items produces it |
+| Users need an undo button | People clearing out old files cannot tell which ones they will want back until after they are gone |
+| Plant managers need predictive maintenance | Plant managers cannot tell which machine fails next week, and finding out costs a day of production |
+
+Every statement in the right column names a person and a moment. None of them contains the word AI.
+
 ### Exercise: write your pair
 
 Take the idea you walked in with and write both versions of it. The second version must name a
@@ -165,6 +174,13 @@ Read-outs are diagnosed against three checks:
 1. Is there a solution hiding inside the sentence?
 2. Can you picture the person, in a place, on a day?
 3. Is there a decision they cannot make right now?
+
+> [!TIP]
+> **Go one level deeper.** Once you have the statement, ask why the situation exists at all. Why
+> *are* there 40 exceptions? If the system surfaces too many because a confidence threshold sits
+> too low, the strongest answer may be to reduce 40 to 10 before anything reaches the supervisor,
+> and only then help them prioritise what is left. Root-cause the problem before designing for it,
+> or you will spend your effort making a symptom easier to live with.
 
 ---
 
@@ -182,40 +198,6 @@ Preview only. Lesson 03 covers the lifecycle in full, with two real case studies
 Design leads at stage 02 and again at stage 05. Stage 08 re-enters stage 01, which is why
 Assignment 01 is a credible starting point rather than a specification.
 
----
-
-## Run sheet
-
-Ninety minutes, eighteen slides. Timings live in the deck's speaker notes.
-
-| # | Slide | Minutes |
-|:--|-------|:-------:|
-| 1 | Title | |
-| 2 | What this lesson is for | 2 |
-| 3 | Design has changed | 3 |
-| 4 | The curator's seven moves | 5 |
-| 5 | AI is not the product | 3 |
-| 6 | The test | 4 |
-| 7 | Break my test (exercise) | 10 |
-| 8 | The test is a spectrum | 3 |
-| 9 | Worked example: Adobe Express | 5 |
-| 10 | Decision 01, who does the work | 5 |
-| 11 | Decision 02, steps or goal | 5 |
-| 12 | Decision 03, prevent or undo | 5 |
-| 13 | The two statements | 5 |
-| 14 | Write your pair (exercise) | 10 |
-| 15 | Read-out and live fix (exercise) | 8 |
-| 16 | The AI product lifecycle | 4 |
-| 17 | Assignment 01 | 10 |
-| 18 | One ask this week | 3 |
-| | **Total** | **90** |
-
-> [!TIP]
-> One ask before the next session: find one real person in your sector who lives with the problem
-> you are circling, and ask them what decision they cannot make today.
-
----
-
 ## Related assignment
 
 [Assignment 01, Define and Frame Your Capstone Concept](../../assignments/01-define-frame-capstone/README.md)
@@ -231,6 +213,11 @@ role AI plays. That role is named from a fixed vocabulary:
 | Classify | Routing a ticket |
 | Guide | Next best action |
 | Assist | Co-editing |
+
+> **Why it matters for designers:** each role fails differently. A wrong prediction stays invisible
+> until later. A wrong classification sends work to the wrong place. A wrong generation sits right
+> there on screen. The role tells you what "wrong" looks like and where the person needs to
+> intervene.
 
 See the assignment page for format, weight, rubric, and submission details.
 

@@ -2,7 +2,7 @@
 title: "Assignment 01: Define and Frame Your Capstone Concept"
 description: Define the problem, target user, and role of AI for the capstone concept
 author: Martyn Gooding
-ms.date: 2026-08-19
+ms.date: 2026-08-26
 ms.topic: assignment
 keywords:
   - AI product design
@@ -18,7 +18,7 @@ keywords:
 | Assignment | 01, Define and Frame Your Capstone Concept |
 | Weight | 20 points |
 | Format | PDF, Figma Slides/File, or Google Slides link |
-| Due | Confirm with the instructor |
+| Due | Before Lesson 04, Monday 7 September 2026 |
 
 ## Supporting lessons
 
