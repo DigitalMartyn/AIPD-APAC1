@@ -19,7 +19,6 @@ keywords:
 > **Instructor:** Martyn Gooding
 > **Working question:** When is AI the right answer?
 > **Deck:** [Lesson 01 slides](https://www.figma.com/slides/J048gt9ZAMUSYmuyyGL9IK)
-> **Instructor:** [run sheet and timings](RUNSHEET.md)
 
 Design work now starts earlier than the screen. When a model can produce a plausible interface in
 seconds, the scarce skill becomes deciding what deserves to exist, and for whom. This lesson gives
